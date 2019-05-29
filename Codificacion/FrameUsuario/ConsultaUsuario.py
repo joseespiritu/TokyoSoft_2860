@@ -3,15 +3,17 @@ from tkinter import *
 from tkinter import ttk
 import tkinter as tk
 
+#definicion de frame 
 ventana_usuario=tk.Tk()
 ventana_usuario.title("Inventario Admin")
 ventana_usuario.geometry("650x350")
 
+#definiendo contenedor
 cuadroUsuario=Frame(ventana_usuario)
 cuadroUsuario.pack(fill="both",expand="True")
 
 
-NombreAdmin_etiqueta=Label(cuadroUsuario,text="Bien venido Admin:")
+NombreAdmin_etiqueta=Label(cuadroUsuario,text="Bienvenido Admin:")
 NombreAdmin_etiqueta.grid(row=0,column=0,sticky='e',padx=10,pady=10)
 
 busquedaEspecifica_campo=Entry(cuadroUsuario)
@@ -29,17 +31,13 @@ cuadroUsuario_combo.grid(row=2,column=3)
 botonOrdena=Button(cuadroUsuario,text="Aplicar")
 botonOrdena.grid(row=2,column=4,padx=10,pady=10)
 
-botonEditar=Button(cuadroUsuario,text="Editar")
-botonEditar.grid(row=3,column=4,padx=10,pady=10)
+botonEditar=Button(cuadroUsuario,text="Funciones Usuarios")
+botonEditar.grid(row=2,column=5,padx=10,pady=10)
 
-botonEliminar=Button(cuadroUsuario,text="Eliminar")
-botonEliminar.grid(row=4,column=4,padx=10,pady=10)
- 
-botonCrear=Button(cuadroUsuario,text="Crear")
-botonCrear.grid(row=5,column=4,padx=10,pady=10)
+botonEliminar=Button(cuadroUsuario,text="Funciones Productos")
+botonEliminar.grid(row=2,column=6,padx=10,pady=10)
 
-botonActualizar=Button(cuadroUsuario,text="Actualizar")
-botonActualizar.grid(row=6,column=4,padx=10,pady=10)
+
 
 #Creacion de la tabla para visualizar los datos
 
