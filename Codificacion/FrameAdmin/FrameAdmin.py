@@ -18,6 +18,13 @@ barraMenu=Menu(ventana_usuario)
 ventana_usuario.config(menu=barraMenu, width=300, height=300)
 
 #-------------------FUNCIONES----------------------
+def RegistroUsuario():
+	import Registro_Usuario
+
+def RegistroProducto():
+	import Registro_producto
+	
+
 def salirAplicacion():
 	valor=messagebox.askquestion("salir","¿Deseas salir de la aplicacion?")
 	if valor=="yes":
@@ -49,11 +56,11 @@ cuadroUsuario_combo.grid(row=2,column=3)
 botonOrdena=Button(cuadroUsuario,text="Aplicar")
 botonOrdena.grid(row=2,column=4,padx=10,pady=10)
 
-botonEditar=Button(cuadroUsuario,text="Funciones Usuarios")
-botonEditar.grid(row=2,column=5,padx=10,pady=10)
+botonFuncionesUsuarios=Button(cuadroUsuario,text="Funciones Usuarios",command=RegistroUsuario)
+botonFuncionesUsuarios.grid(row=2,column=5,padx=10,pady=10)
 
-botonEliminar=Button(cuadroUsuario,text="Funciones Productos")
-botonEliminar.grid(row=2,column=6,padx=10,pady=10)
+botonFuncionesProductos=Button(cuadroUsuario,text="Funciones Productos", command=RegistroProducto)
+botonFuncionesProductos.grid(row=2,column=6,padx=10,pady=10)
 
 
 #-----------------------------BARRA DE MENU----------------------------------
