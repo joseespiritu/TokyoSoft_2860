@@ -17,6 +17,20 @@ cuadroUsuario.pack(fill="both",expand="True")
 barraMenu=Menu(ventana_usuario)
 ventana_usuario.config(menu=barraMenu, width=300, height=300)
 
+#-------------------FUNCIONES----------------------
+def salirAplicacion():
+	valor=messagebox.askquestion("salir","¿Deseas salir de la aplicacion?")
+	if valor=="yes":
+		ventana_usuario.destroy()
+
+def acercaDe():
+	messagebox.showinfo("Acerca de...","Proyecto Sistema Registro de Inventario de Productos")
+
+def Licencia():
+	messagebox.showinfo("Licencia","Tokyo soft 2019 Todos los derechos reservados")
+
+
+
 NombreAdmin_etiqueta=Label(cuadroUsuario,text="Bienvenido Admin:")
 NombreAdmin_etiqueta.grid(row=0,column=0,sticky='e',padx=10,pady=10)
 
@@ -44,9 +58,9 @@ botonEliminar.grid(row=2,column=6,padx=10,pady=10)
 
 #-----------------------------BARRA DE MENU----------------------------------
 ayudaMenu=Menu(barraMenu, tearoff=0)
-ayudaMenu.add_command(label="Licencia")
-ayudaMenu.add_command(label="Acerca de...")
-ayudaMenu.add_command(label="Salir")
+ayudaMenu.add_command(label="Licencia", command=Licencia)
+ayudaMenu.add_command(label="Acerca de...", command=acercaDe)
+ayudaMenu.add_command(label="Salir", command=salirAplicacion)
 
 barraMenu.add_cascade(label="Ayuda", menu=ayudaMenu)
 
