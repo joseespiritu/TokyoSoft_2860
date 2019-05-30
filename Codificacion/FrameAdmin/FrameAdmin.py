@@ -19,10 +19,12 @@ ventana_usuario.config(menu=barraMenu, width=300, height=300)
 
 #-------------------FUNCIONES----------------------
 def RegistroUsuario():
-	import Registro_Usuario
+	#import Registro_Usuario
+	from FrameAdmin import Registro_Usuario
 
 def RegistroProducto():
-	import Registro_producto
+	#import Registro_producto
+	from FrameAdmin import Registro_producto
 	
 
 def salirAplicacion():
