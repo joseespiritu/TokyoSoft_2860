@@ -6,6 +6,7 @@ raiz=Tk()
 raiz.title("Registro de Usuario")
 raiz.resizable(0,0)
 raiz.geometry("350x350")
+raiz.iconbitmap("tokyo.ico")
 
 #CUADRO DE VISUALIZACION
 CuadroUsuario=Frame(raiz)

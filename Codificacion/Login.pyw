@@ -6,6 +6,7 @@ raiz=Tk()
 raiz.title("Inicio Sesion")
 raiz.resizable(0,0)
 raiz.geometry("250x150")
+raiz.iconbitmap("tokyo.ico")
 
 #CUADRO DE VISUALIZACION
 CuadroLogin=Frame(raiz)

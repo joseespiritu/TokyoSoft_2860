@@ -8,6 +8,7 @@ from tkinter import messagebox #funcion de tkinter que permite la visualización
 ventana_usuario=tk.Tk()
 ventana_usuario.title("Inventario Admin")
 ventana_usuario.geometry("650x350")
+ventana_usuario.iconbitmap("tokyo.ico")
 
 #definiendo contenedor
 cuadroUsuario=Frame(ventana_usuario)

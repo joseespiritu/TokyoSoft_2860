@@ -8,7 +8,7 @@ ventana=tk.Tk()
 ventana.title("Registro de producto")
 ventana.resizable (0,0)
 ventana.geometry("350x350")
-
+ventana.iconbitmap("tokyo.ico")
 
 barraMenu=Menu(ventana)
 ventana.config(menu=barraMenu, width=300, height=300)
